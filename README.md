@@ -17,7 +17,7 @@ icdApp is a vscode extension that uses AI to build custom fullstack decentralise
 ### Quick Start
 1. **Installation**
 
-    [Install from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=raseai.icdapp) or search **icdApp** in Vscode extensions tab.
+    [Install from Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=raseai.icdapp) or search **icdapp** in Vscode extensions tab.
 
 2. **Create Your First dApp**
    - Open or create a workspace folder
