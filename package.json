@@ -1,0 +1,107 @@
+{
+  "name": "icdapp",
+  "displayName": "icdApp",
+  "description": "Idea to fullstack dApp",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "Programming Languages",
+    "AI",
+    "Machine Learning"
+  ],
+  "keywords": [
+    "dapp",
+    "fullstack",
+    "Web3",
+    "ICP",
+    "development",
+    "blockchain"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "icdapp.buildDApp",
+        "title": "Build Fullstack ICP dApp",
+        "category": "icdApp",
+        "icon": "$(rocket)"
+      },
+      {
+        "command": "icdapp.showSessions",
+        "title": "Show Active Build Sessions",
+        "category": "icdApp",
+        "icon": "$(list-unordered)"
+      },
+      {
+        "command": "icdapp.openOutput",
+        "title": "Open IcdApp Output",
+        "category": "icdApp",
+        "icon": "$(output)"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "icdapp.buildDApp"
+        },
+        {
+          "command": "icdapp.showSessions"
+        },
+        {
+          "command": "icdapp.openOutput"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "IcdApp",
+      "properties": {
+        "icdapp.apiUrl": {
+          "type": "string",
+          "default": "http://localhost:3000",
+          "description": "Base URL for the IcdApp API server"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.101.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.10.0"
+  },
+  "publisher": "raseai",
+  "homepage": "https://g53tt-xyaaa-aaaam-aenbq-cai.icp0.io/#",
+  "license": "MIT",
+  "icon": "icdApp.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kwasi633/icdApp"
+  }
+}
