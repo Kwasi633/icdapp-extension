@@ -21,7 +21,7 @@ icdApp is a vscode extension that uses AI to build custom fullstack decentralise
 
 2. **Create Your First dApp**
    - Open or create a workspace folder
-   - Press `Ctrl+Shift+P` and type **icdApp** in the serach bar.
+   - Press `Ctrl+Shift+P` and type **icdapp** in the serach bar.
    - Selecting the command "icdApp: Build Fullstack ICP dApp" from the list
    - Follow the interactive wizard:
      - Enter your project name
